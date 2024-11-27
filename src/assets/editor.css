@@ -1,0 +1,39 @@
+.editorContainer {
+    font-family: 'source code pro';
+    width: 100%;
+    display: flex;
+    overflow-y: scroll;
+    height: calc(100vh - 45px);
+}
+
+.editorLines {
+    width: 40px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.editorLines-selectedLine {
+    color: white;
+}
+
+.editorLines-line {
+    color: #989898
+}
+
+.editor {
+    width: 100%;
+    height: 4000px;
+    margin-left: 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+.editor-header-syntax {
+    color: rgb(86, 86, 255);
+    font-weight: bold;
+}
+
+.editor-text-syntax {
+    color: #cecece
+}

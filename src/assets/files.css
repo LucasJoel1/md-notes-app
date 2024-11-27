@@ -1,0 +1,71 @@
+.fileContainer {
+    background-color: #525252;
+    outline: solid 2px #1f1f1f;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+    min-width: 200px;
+    width: 300px;
+    display: block;
+    overflow-x: hidden;
+}
+
+.fileContainerResizer {
+    width: 10px;
+    height: 100vh;
+    position: absolute;
+    cursor: col-resize;
+    background-color: transparent;
+    top: 0;
+    right: 0;
+}
+
+
+.fileContainerHeader {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    user-select: none;
+    -webkit-user-select: none
+}
+
+.fileContainerHeaderProjectName {
+    font-weight: bold;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.fileContainerHeaderFileTools {
+    margin-left: auto;
+    margin-right: 30px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.fileContainerHeaderFileToolsTool {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    fill: white;
+}
+
+.fileContainerHeaderFileToolsToolImg {
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.fileContainerHeaderFileToolsTool:hover {
+    background-color: #434343;
+    border-radius: 10px;
+}
+
+.fileContainerHeaderFileToolsTool:active {
+    background-color: #3b3b3b;
+    border-radius: 10px;
+}

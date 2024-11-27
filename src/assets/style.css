@@ -1,26 +1,12 @@
 body {
     background-color: #373737;
     margin: 0;
+    -webkit-user-select: none;
+    overflow: hidden;
 }
 
-.fileContainer {
-    background-color: #525252;
-    outline: solid 3px #1f1f1f;
-    height: 100vh;
-    resize: horizontal;
-    overflow: auto;
-    position: relative;
-    min-width: 200px;
-    width: 300px;
-}
-
-.fileContainerResizer {
-    width: 3px;
-    height: 100vh;
-    display: hidden;
-    position: absolute;
-    cursor: col-resize;
-    background-color: red;
-    top: 0;
-    right: 0;
+.window {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
 }

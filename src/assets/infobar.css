@@ -1,0 +1,25 @@
+.infobarContainer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff5afc;
+    height: 25px;
+}
+
+.infobarItem {
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+
+}
+
+.infobarItem-left {
+    margin-left: auto;
+    margin-right: 24px;
+}
+
+.infobarItem-right {
+    margin-left: 16px;
+}
