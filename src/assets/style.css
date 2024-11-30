@@ -3,10 +3,15 @@ body {
     margin: 0;
     -webkit-user-select: none;
     overflow: hidden;
+    font-family: 'roboto';
 }
 
 .window {
     display: flex;
     margin-top: 20px;
     flex-direction: row;
+}
+
+*::-webkit-scrollbar {
+    display: none;
 }

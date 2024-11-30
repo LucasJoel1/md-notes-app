@@ -24,16 +24,36 @@
     width: 100%;
     height: 4000px;
     margin-left: 15px;
-    overflow-x: auto;
+    overflow-x: scroll;
     white-space: nowrap;
+    display: inline-block;
 }
 
 
 .editor-header-syntax {
     color: rgb(86, 86, 255);
-    font-weight: bold;
+    /* font-weight: bold; */
+    display: inline-block;
 }
 
 .editor-text-syntax {
-    color: #cecece
+    color: #cecece;
+    display: inline-block;
 }
+
+@keyframes cursor {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.editor-cursor {
+    top: -2px;  /* default cursor positioning */
+    left: calc(-9.609375px / 2);
+    position: relative;
+    color: white;
+    display: inline-block;
+    animation: cursor 0.9s infinite;
+    z-index: 1000;
+}
+
